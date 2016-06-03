@@ -1,0 +1,19 @@
+      <h1>List of People in Star Wars</h1>
+      <div class="container list">
+        <ul class="people-list" when-scrolled='more()'>
+          <li data-ng-repeat='item in items'>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Name</th>
+                  <td><a href="detail/{{item.peopleID}}/">{{item.name}}</a></td>
+                </tr>
+                <tr>
+                  <th>Species</th>
+                  <td>{{item.species_name}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </div>
